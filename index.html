@@ -153,13 +153,18 @@ function lanjutkanProfil() {
     window.location.href = "https://robloxindonesia.github.io/home";
 }
 
+const params = new URLSearchParams(window.location.search);
+const url = params.get("url");
+
 const tombol = document.getElementById("tombolUrl");
 
-tombol.style.display = "block";
+if (url) {
+    tombol.style.display = "block";
 
-tombol.onclick = function () {
-    window.location.href = "https://robloxindonesia.github.io";
-};
+    tombol.onclick = function () {
+        window.location.href = "https://robloxindonesia.github.io/" + url;
+    };
+}
 </script>
 </body>
 </html>
