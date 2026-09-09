@@ -1,170 +1,138 @@
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+<title>Roblox Indonesia</title>
 
-  <title>Roblox Indonesia</title>
+<meta name="description"
+      content="Roblox Indonesia - Informasi Roblox, berita, sejarah, username, game, tutorial, foto, dan video.">
 
-  <meta name="google-site-verification" content="CbFZdNLcy9_BgpK44E2YoAFx5VRgO4Oui1PaPVw1B_4">
+<meta name="robots"
+      content="index, follow, max-image-preview:large">
 
-  <meta name="description" content="Roblox Indonesia - Informasi Roblox, berita, sejarah, username, game, tutorial, foto, dan video.">
+<meta name="googlebot"
+      content="index, follow">
 
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="googlebot" content="index, follow">
-  <meta name="theme-color" content="#202124">
-
-  <link rel="canonical" href="https://robloxindo.github.io/">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="apple-touch-icon" href="/favicon.png">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Roblox Indonesia">
-  <meta property="og:description" content="Informasi Roblox, berita, sejarah, username, game, tutorial, foto, dan video.">
-  <meta property="og:url" content="https://robloxindo.github.io/">
-  <meta property="og:site_name" content="Roblox Indonesia">
-  <meta property="og:image" content="https://robloxindonesia.github.io/favicon.png">
-  <meta property="og:locale" content="id_ID">
-
-  <!-- Twitter/X -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Roblox Indonesia">
-  <meta name="twitter:description" content="Informasi Roblox, berita, sejarah, username, game, tutorial, foto, dan video.">
-  <meta name="twitter:image" content="https://robloxindonesia.github.io/favicon.png">
-
-  <!-- Nama situs untuk Google -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://robloxindonesia.github.io/#website",
-    "url": "https://robloxindo.github.io/",
-    "name": "Roblox Indonesia",
-    "alternateName": "RobloxIndonesia"
-  }
-  </script>
-
-  <!-- Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://robloxindonesia.github.io/#organization",
-    "name": "Roblox Indonesia",
-    "url": "https://robloxindo.github.io/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://robloxindonesia.github.io/favicon.png"
-    }
-  }
-  </script>
-
-  <style>
-    :root {
-      color-scheme: dark;
-      --bg: #202124;
-      --card: #292a2d;
-      --text: #f1f3f4;
-      --muted: #bdc1c6;
-      --accent: #8ab4f8;
-    }
-  </style>
-
-  <link rel="stylesheet" href="https://robloxindonesia.github.io/style/halaman-utama.github.css">
-</head>
-<body>
-
-<div class="header">
-<div class="header1">
-    <button class="menu-btn">☰</button>
-    
-     <div class="right-icons">
-         <div id="profiles"></div>
-         <div class="search">⌕</div>
-     </div>
-</div>     
-     
-<!-- Nav -->
-<div class="nav">
-    <a id="link1"></a>
-    <a id="link2"></a>
-    <a id="link3"></a>
-    <a id="link4"></a>
-</div>
-</div>
-
-<div id="menuDropdown" class="sidebar">
-    <div class="close-btn1">
-    <div id="logo1"></div>
-    <div id="logo2"></div>
-    <span class="close-btn" onclick="closeMenu()">×</span>
-    </div>
-    <a id="link9"></a>
-    <a id="link10"></a>
-    <a id="link11"></a>
-    <a id="link12"></a>
-    <a id="link13"></a>
-    <a id="link14"></a>
-    <a id="link15"></a>
-    <a id="link16"></a>
-    <div class="content"></div>
-    <div class="footer-links">
-    <a id="link5"></a>
-    <a id="link6"></a>
-    <a id="link7"></a>
-    <a id="link8"></a>
-    </div>
-    <hr>
-    <div id="text1" class="copyright"></div>
-    <div id="text2" class="copyright"></div>
-</div>
-
-<br>
-<br>
-<br>
-<br>
-
-<div class="halaman">
-    <main class="konten">
-        <div class="judul">
-            <img src="https://robloxindonesia.github.io/img/logo1.png" class="judul-img">
-        </div>
-
-        <div class="subjudul">
-            Jelajahi Situs Browser <span>Roblox</span>
-            Indonesia kami
-        </div>
+<meta name="theme-color"
+      content="#202124">
 
 
-        <div class="tombol">
+<!-- =========================
+     CANONICAL
+========================= -->
 
-            <button type="button" class="btn browser" id="tombolUrl" style="display:none;"
->Lanjutkan ke browser</button>
-            <button type="button"class="btn"onclick="lanjutkanProfil()">Lanjutkan ke home</button>
-        </div>
-    </main>
-</div>
+<link rel="canonical"
+      href="https://robloxindonesia.github.io/">
 
-<script src="/script/halaman-utama.js"></script>
-<script>
-function lanjutkanProfil() {
-    window.location.href = "https://robloxindonesia.github.io/home";
-}
 
-const params = new URLSearchParams(window.location.search);
-const url = params.get("url");
+<!-- =========================
+     FAVICON
+========================= -->
 
-const tombol = document.getElementById("tombolUrl");
+<link rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="https://robloxindonesia.github.io/favicon.png">
 
-if (url) {
-    tombol.style.display = "block";
+<link rel="icon"
+      type="image/svg+xml"
+      href="https://robloxindonesia.github.io/favicon.svg">
 
-    tombol.onclick = function () {
-        window.location.href = "https://robloxindonesia.github.io/" + url;
-    };
+<link rel="apple-touch-icon"
+      href="https://robloxindonesia.github.io/favicon.png">
+
+
+<!-- =========================
+     OPEN GRAPH
+========================= -->
+
+<meta property="og:type"
+      content="website">
+
+<meta property="og:title"
+      content="Roblox Indonesia">
+
+<meta property="og:description"
+      content="Informasi Roblox, berita, sejarah, username, game, tutorial, foto, dan video.">
+
+<meta property="og:url"
+      content="https://robloxindo.github.io/">
+
+<meta property="og:site_name"
+      content="Roblox Indonesia">
+
+<meta property="og:image"
+      content="https://robloxindonesia.github.io/favicon.png">
+
+<meta property="og:locale"
+      content="id_ID">
+
+
+<!-- =========================
+     TWITTER / X
+========================= -->
+
+<meta name="twitter:card"
+      content="summary">
+
+<meta name="twitter:title"
+      content="Roblox Indonesia">
+
+<meta name="twitter:description"
+      content="Informasi Roblox, berita, sejarah, username, game, tutorial, foto, dan video.">
+
+<meta name="twitter:image"
+      content="https://robloxindonesia.github.io/favicon.png">
+
+
+<!-- =========================
+     WEBSITE
+========================= -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://robloxindo.github.io/#website",
+  "url": "https://robloxindo.github.io/",
+  "name": "Roblox Indonesia",
+  "alternateName": "RobloxIndonesia"
 }
 </script>
+
+
+<!-- =========================
+     ORGANIZATION
+========================= -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://robloxindo.github.io/#organization",
+  "name": "Roblox Indonesia",
+  "url": "https://robloxindo.github.io/",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://robloxindonesia.github.io/favicon.png"
+  }
+}
+</script>
+</head>
+
+<body>
+
+<script>
+const path = window.location.pathname;
+const search = window.location.search;
+
+const target =
+    "https://robloxindonesia.github.io" +
+    path +
+    search;
+
+window.location.replace(target);
+</script>
+
 </body>
 </html>
