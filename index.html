@@ -150,22 +150,16 @@
 <script src="/script/halaman-utama.js"></script>
 <script>
 function lanjutkanProfil() {
-    window.location.href =
-        "/home";
+    window.location.href = "https://robloxindonesia.github.io/home";
 }
-
-const params = new URLSearchParams(window.location.search);
-const url = params.get("url");
 
 const tombol = document.getElementById("tombolUrl");
 
-if (url) {
-    tombol.style.display = "block";
+tombol.style.display = "block";
 
-    tombol.onclick = function () {
-        window.location.href = "/" + url;
-    };
-}
+tombol.onclick = function () {
+    window.location.href = "https://robloxindonesia.github.io";
+};
 </script>
 </body>
 </html>
